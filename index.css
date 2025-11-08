@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.bg {
+  width: 1200px;
+  margin-top: 60px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.bg-img {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+}
+
+#cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  pointer-events: none;
+  transform: translate3d(0, 0, 0);
+  transition: transform 2s cubic-bezier(0.175, 0.885, 0.32, 2);
+}
+
+#cursor img {
+  width: 100%;
+  display: block;
+}
